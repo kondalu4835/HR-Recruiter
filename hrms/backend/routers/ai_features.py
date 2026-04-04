@@ -19,7 +19,7 @@ router = APIRouter()
 
 # --- Initialize Mistral API ---
 # MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
-MISTRAL_API_KEY ="U1xUzvLfT02gU4UKCp4trzCIfz9BHUCe"
+MISTRAL_API_KEY =os.getenv("MISTRAL_API_KEY")
 MISTRAL_API_URL = "https://api.mistral.ai/v1"
 
 def call_mistral(prompt: str) -> str:
